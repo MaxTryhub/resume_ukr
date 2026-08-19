@@ -1,220 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="uk">
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume</title>
+    <title>Максим Тригуб - Business Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="Main-container">
-      <div class="Main-content-section">
-        <div class="about-me">
-          <h2 class="about-me-profession">Business Analyst / Fullstack Developer</h2>
-          <h1 class="about-me-name">Максим Тригуб</h1>
-          <p class="about-me-description">
-            Вмотивований і орієнтований на деталі фахівець з комерційним досвідом понад 3 роки. 
-            Маю глибокий досвід роботи з BPM-системами (Node-RED, Corezoid, n8n, Creatio) та <strong>ERP-системою Odoo</strong>. 
-            Володію сильними аналітичними навичками: регулярно проводив комунікацію із замовниками, аналізував бізнес-процеси, збирав вимоги та формував технічні завдання, які згодом передавав іншим розробникам або успішно реалізовував самостійно. Вправно володію сучасними фронтенд- та бекенд-технологіями, маю досвід інтеграції різноманітних веб-рішень та автоматизації бізнес-процесів.
-          </p>
-        </div>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --bg-body: #f4f7f6;
+            --bg-resume: #ffffff;
+            --sidebar-bg: #1a252f;
+            --sidebar-text: #ecf0f1;
+        }
 
-        <div class="My-project">
-          <h3 class="main-content-title">Проекти власного виконання поза основним місцем праці</h3>
-          <ol class="My-project-list">
-            <li class="projects-item">
-              <span class="projects-item-text">
-                <a
-                  href="https://jkrovlia.org.ua/"
-                  target="_blank"
-                  class="My-project-link"
-                >
-                  https://jkrovlia.org.ua/
-                </a>
-                <span>
-                  <span class="My-project-bracket">[</span> HTML5, CSS3,
-                  JavaScript <span class="My-project-bracket">]</span></span
-                >
-              </span>
-            </li>
-            <li class="projects-item">
-              <span class="projects-item-text">
-                <a
-                  href="https://garantkrovlia.com.ua/"
-                  target="_blank"
-                  class="My-project-link"
-                >
-                  https://garantkrovlia.com.ua/
-                </a>
-                <span>
-                  <span class="My-project-bracket">[</span> HTML5, CSS3,
-                  JavaScript, React.js
-                  <span class="My-project-bracket">]</span></span
-                >
-              </span>
-            </li>
-            <li class="projects-item">
-              <span class="projects-item-text">
-                <a
-                  href="https://krovliaexpert.com/"
-                  target="_blank"
-                  class="My-project-link"
-                >
-                  https://krovliaexpert.com/
-                </a>
-                <span>
-                  <span class="My-project-bracket">[</span> HTML5, CSS3,
-                  JavaScript, React.js
-                  <span class="My-project-bracket">]</span></span
-                >
-              </span>
-            </li>
-          </ol>
-        </div>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        <div class="My-work-experience">
-          <h3 class="main-content-title">Досвід роботи</h3>
-          
-          <h4 class="University-name">ПриватБанк</h4>
-          <h5 class="university-fucilty">
-            Front-end / BPM розробник | понад 1 рік
-          </h5>
-          <ul class="My-work-experience-duties">
-            <li class="My-work-experience-duty">
-              Постійна комунікація із замовниками (стейкхолдерами) для збору та аналізу бізнес-вимог.
-            </li>
-            <li class="My-work-experience-duty">
-              Формалізація потреб у технічні завдання з подальшою передачею команді розробки або самостійною реалізацією.
-            </li>
-            <li class="My-work-experience-duty">
-              Розробка та підтримка фронтенд-частини внутрішніх систем банку.
-            </li>
-            <li class="My-work-experience-duty">
-              Автоматизація бізнес-процесів за допомогою BPM-систем.
-            </li>
-            <li class="My-work-experience-duty">
-              Написання та підтримка серверної логіки з використанням Node.js.
-            </li>
-            <li class="My-work-experience-duty">
-              Опис своїх процесів на Confluence.
-            </li>
-          </ul>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
 
-          <br/> <h4 class="University-name">EVA</h4>
-          <h5 class="university-fucilty">
-            Розробник ПЗ-Аналітик | 1 рік 8 місяців
-          </h5>
-          <ul class="My-work-experience-duties">
-            <li class="My-work-experience-duty">
-              Аналіз потреб бізнесу, розробка та впровадження процесів автоматизації (включаючи досвід роботи з Odoo).
-            </li>
-            <li class="My-work-experience-duty">
-              Розробка проектів з використанням Node-RED (серверні та локальні ПК реалізації).
-            </li>
-            <li class="My-work-experience-duty">
-              Працював з базами даних MongoDB, Redis, MySQL, PostgreSQL.
-            </li>
-            <li class="My-work-experience-duty">
-              Розробляв і підтримував Telegram-ботів у Corezoid.
-            </li>
-            <li class="My-work-experience-duty">
-              Інтегрував React.js і Vue.js через CDN у проекти Node-RED.
-            </li>
-            <li class="My-work-experience-duty">
-              Опис своїх процесів і процесів колег на wiki.js.
-            </li>
-          </ul>
-        </div>
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--bg-resume);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
-        <div class="My-work-experience">
-          <h3 class="main-content-title">Освіта</h3>
-          <h4 class="University-name">
-            Національний технічний університет "Дніпровська політехніка"
-          </h4>
-          <h5 class="university-fucilty">
-            Ступінь магістра з інформаційної безпеки та телекомунікацій
-          </h5>
-        </div>
-      </div>
+        /* --- SIDEBAR --- */
+        .sidebar {
+            width: 300px;
+            background-color: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
 
-      <aside class="sidebar-section">
-        <img
-          class="photo"
-          src="img/photo_2022-10-07_17-36-33.jpg"
-          alt="My photo"
-        />
+        .photo-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--accent-color);
+        }
 
-        <div class="contacts-section">
-          <h3 class="sidebar-title">Контакти</h3>
-          <div>
-            <span class="contacts-section-type">C:</span>
-            <a class="contacts-section-link" href="tel:+380968344149"
-              >+380968344149</a
-            >
-          </div>
-          <div>
-            <span class="contacts-section-type">E:</span>
-            <a class="contacts-section-link" href="mailto:trigmaks@gmail.com"
-              >trigmaks@gmail.com</a
-            >
-          </div>
-        </div>
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-        <div class="Tech-Skills">
-          <h3 class="sidebar-title">Technical / BA Skills</h3>
-          <ul class="Tech-Skills-list">
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Odoo ERP</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Business Analysis</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Requirements Gathering</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Node.js</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Node-RED</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Corezoid</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Creatio</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text"
-                >MongoDB, Redis, MySQL, PostgreSQL</span
-              >
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">HTTPS, TLS</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">Git</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">JavaScript</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">TypeScript</span>
-            </li>
-            <li class="Tech-Skills-item">
-              <span class="Tech-Skills-item-text">React.js / Vue.js</span>
-            </li>
-          </ul>
-        </div>
+        .sidebar-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
 
-      </aside>
+        .contact-list, .skills-list {
+            list-style: none;
+        }
+
+        .contact-list li, .skills-list li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-list a {
+            color: var(--sidebar-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-list a:hover {
+            color: var(--accent-color);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skills-list li {
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .main-content {
+            flex: 1;
+            padding: 3rem;
+            background-color: var(--bg-resume);
+        }
+
+        .header-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .profession {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-body);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* Experience Items */
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .duration {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .job-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .duties-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .duties-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects */
+        .projects-list {
+            list-style: none;
+        }
+
+        .projects-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .projects-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .projects-list a:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-left: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                padding: 2rem;
+            }
+            .main-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="photo-container">
+                <!-- Обов'язково зміни шлях до свого фото -->
+                <img src="img/photo_2022-10-07_17-36-33.jpg" alt="Максим Тригуб" />
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Контакти</h3>
+                <ul class="contact-list">
+                    <li>📞 <a href="tel:+380968344149">+38 096 834 41 49</a></li>
+                    <li>📧 <a href="mailto:trigmaks@gmail.com">trigmaks@gmail.com</a></li>
+                    <li>📍 Львів / Віддалено</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>BA / Domain Skills</h3>
+                <ul class="skills-list">
+                    <li>Requirements Gathering</li>
+                    <li>BPMN 2.0 / UML</li>
+                    <li>Contact Center Processes</li>
+                    <li>Technical Specs (ТЗ)</li>
+                    <li>CRM / ERP Integration</li>
+                    <li>Stakeholder Communication</li>
+                    <li>Cisco / Corezoid</li>
+                    <li>Visio / Miro</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Tech Stack</h3>
+                <ul class="skills-list">
+                    <li>Node.js / JS / TS</li>
+                    <li>Vue.js / React</li>
+                    <li>Node-RED</li>
+                    <li>Creatio / Bitrix24</li>
+                    <li>Odoo ERP</li>
+                    <li>PostgreSQL / MySQL</li>
+                    <li>MongoDB / Redis</li>
+                    <li>Azure API</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Мови</h3>
+                <ul class="skills-list">
+                    <li>Англійська - Intermediate+</li>
+                    <li>Українська - Рідна</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <header class="header-section">
+                <div class="profession">Business Analyst / Systems Analyst</div>
+                <h1 class="name">Максим Тригуб</h1>
+                <p class="summary">
+                    Аналітик із сильною технічною експертизою та глибоким розумінням внутрішньої "кухні" контакт-центрів (понад 4 роки досвіду в підтримці клієнтів та 3+ роки в розробці/бізнес-аналізі). 
+                    Спеціалізуюсь на зборі вимог, моделюванні бізнес-процесів (BPMN), написанні ТЗ та впровадженні CRM/BPM-систем. Завдяки власному досвіду роботи з інструментами КЦ (Cisco, Corezoid, Sender) та навичкам інтеграції складних рішень, чудово розумію потреби бізнесу та вмію перекладати їх на мову розробки.
+                </p>
+            </header>
+
+            <section>
+                <h2 class="section-title">Досвід роботи</h2>
+
+                <!-- ПриватБанк -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <span class="company-name">ПриватБанк</span>
+                        <span class="duration">1 рік 4 місяці</span>
+                    </div>
+                    <div class="job-title">Business Analyst / Developer</div>
+                    <ul class="duties-list">
+                        <li>Регулярна комунікація із замовниками та стейкхолдерами для збору, аналізу та узгодження бізнес-вимог.</li>
+                        <li>Формалізація вимог у технічні завдання (ТЗ) з подальшою передачею команді розробки або самостійною реалізацією.</li>
+                        <li>Участь у допрацюванні та оптимізації внутрішньої CRM-системи банку.</li>
+                        <li>Моделювання та розробка бізнес-процесів у BPM-системах, створення інтерфейсів для клієнтів і внутрішніх співробітників.</li>
+                        <li>Робота зі стеком: JavaScript, TypeScript, React, Node.js, PHP. Опис процесів на Confluence.</li>
+                    </ul>
+                </div>
+
+                <!-- EVA -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <span class="company-name">EVA</span>
+                        <span class="duration">1 рік 8 місяців</span>
+                    </div>
+                    <div class="job-title">Бізнес-аналітик / Аналітик ПЗ</div>
+                    <ul class="duties-list">
+                        <li>Аналіз бізнес-потреб, написання ТЗ для розробників, побудова блок-схем бізнес-процесів за допомогою Visio та Miro.</li>
+                        <li>Самостійно спроєктував та розробив <strong>кастомну CRM-систему управління магазинами</strong> (управління внутрішніми процесами, датчиками, аудіо-системами) за допомогою Node-RED, Vue.js (CDN) та Corezoid.</li>
+                        <li>Впровадив інтеграцію системи управління з Telegram-ботами для зручного використання співробітниками магазинів.</li>
+                        <li>Розробляв дашборди на Creatio з подальшою їх інтеграцією в Bitrix24.</li>
+                        <li>Взаємодіяв із сервісами Microsoft, Azure API; автоматизовував процеси (включаючи роботу з Odoo ERP).</li>
+                    </ul>
+                </div>
+
+                <!-- Monobank -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <span class="company-name">Monobank</span>
+                        <span class="duration">3 роки</span>
+                    </div>
+                    <div class="job-title">Оператор підтримки клієнтів (Customer Support)</div>
+                    <ul class="duties-list">
+                        <li>Експертне знання внутрішніх процесів та архітектури роботи сучасного контакт-центру.</li>
+                        <li>Практичний досвід роботи з системами комунікації та маршрутизації: <strong>Sender, Corezoid, Cisco</strong>.</li>
+                        <li>Збір зворотного зв'язку, виявлення проблемних зон у клієнтському досвіді (CX).</li>
+                    </ul>
+                </div>
+
+                <!-- Vodafone -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <span class="company-name">Vodafone Україна</span>
+                        <span class="duration">1 рік</span>
+                    </div>
+                    <div class="job-title">Оператор підтримки клієнтів</div>
+                    <ul class="duties-list">
+                        <li>Обслуговування абонентів телекомунікаційної мережі, робота з великими обсягами дзвінків.</li>
+                        <li>Практичне розуміння метрик контакт-центру, використання внутрішніх систем обліку та білінгу.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Проєкти (Freelance / Власні)</h2>
+                <ul class="projects-list">
+                    <li>
+                        <a href="https://garantkrovlia.com.ua/" target="_blank">garantkrovlia.com.ua</a>
+                        <span class="tech-stack">[ HTML5, CSS3, JS, React.js ]</span>
+                    </li>
+                    <li>
+                        <a href="https://krovliaexpert.com/" target="_blank">krovliaexpert.com</a>
+                        <span class="tech-stack">[ HTML5, CSS3, JS, React.js ]</span>
+                    </li>
+                    <li>
+                        <a href="https://jkrovlia.org.ua/" target="_blank">jkrovlia.org.ua</a>
+                        <span class="tech-stack">[ HTML5, CSS3, JS ]</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">Освіта</h2>
+                <div class="experience-item" style="margin-bottom: 0;">
+                    <div class="exp-header">
+                        <span class="company-name">Національний технічний університет "Дніпровська політехніка"</span>
+                    </div>
+                    <div class="job-title" style="color: var(--text-muted);">Магістр з інформаційної безпеки та телекомунікацій</div>
+                </div>
+            </section>
+        </main>
     </div>
-  </body>
+</body>
 </html>
