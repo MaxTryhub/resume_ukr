@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Максим Тригуб - Power Platform / Backend Developer</title>
+    <title>Максим Тригуб - BI / Data Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -12,9 +12,9 @@
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #34495e;
-            --accent-color: #3498db;
+            --accent-color: #ff671f; /* Акцентний колір під стилістику сучасного ритейлу / Comfy Orange */
             --text-main: #333333;
-            --text-muted: #666666;
+            --text-muted: #555555;
             --bg-body: #f4f7f6;
             --bg-resume: #ffffff;
             --sidebar-bg: #1a252f;
@@ -36,7 +36,7 @@
         }
 
         .resume-container {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: 0 auto;
             background: var(--bg-resume);
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -47,18 +47,18 @@
 
         /* --- SIDEBAR --- */
         .sidebar {
-            width: 300px;
+            width: 320px;
             background-color: var(--sidebar-bg);
             color: var(--sidebar-text);
             padding: 2.5rem 2rem;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.8rem;
         }
 
         .photo-container {
-            width: 180px;
-            height: 180px;
+            width: 170px;
+            height: 170px;
             margin: 0 auto;
             border-radius: 50%;
             overflow: hidden;
@@ -72,13 +72,13 @@
         }
 
         .sidebar-section h3 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             color: var(--accent-color);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            padding-bottom: 0.4rem;
         }
 
         .contact-list, .skills-list {
@@ -86,8 +86,8 @@
         }
 
         .contact-list li, .skills-list li {
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
         }
 
         .contact-list a {
@@ -103,127 +103,102 @@
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
 
         .skills-list li {
             background: rgba(255,255,255,0.1);
-            padding: 0.3rem 0.8rem;
+            padding: 0.3rem 0.6rem;
             border-radius: 4px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             margin-bottom: 0;
         }
 
         /* --- MAIN CONTENT --- */
         .main-content {
             flex: 1;
-            padding: 3rem;
+            padding: 2.5rem 3rem;
             background-color: var(--bg-resume);
         }
 
         .header-section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         .profession {
             color: var(--accent-color);
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.15rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 0.5rem;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.4rem;
         }
 
         .name {
-            font-size: 3rem;
+            font-size: 2.6rem;
             font-weight: 700;
             color: var(--primary-color);
             line-height: 1.1;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .summary {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--text-muted);
+            text-align: justify;
         }
 
         .section-title {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             color: var(--primary-color);
             border-bottom: 2px solid var(--bg-body);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            margin-top: 2.5rem;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.2rem;
+            margin-top: 2rem;
             font-weight: 600;
         }
 
-        /* Experience Items */
         .experience-item {
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
         }
 
         .exp-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
 
         .company-name {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 700;
             color: var(--primary-color);
         }
 
         .duration {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--accent-color);
             font-weight: 600;
         }
 
         .job-title {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             color: var(--secondary-color);
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
         .duties-list {
             list-style-type: disc;
-            padding-left: 1.5rem;
+            padding-left: 1.3rem;
             color: var(--text-muted);
+            font-size: 0.92rem;
         }
 
         .duties-list li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
-        /* Projects */
-        .projects-list {
-            list-style: none;
-        }
-
-        .projects-list li {
-            margin-bottom: 0.8rem;
-        }
-
-        .projects-list a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .projects-list a:hover {
-            text-decoration: underline;
-        }
-
-        .tech-stack {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-left: 0.5rem;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .resume-container {
                 flex-direction: column;
@@ -233,7 +208,7 @@
                 padding: 2rem;
             }
             .main-content {
-                padding: 2rem;
+                padding: 1.5rem;
             }
         }
     </style>
@@ -251,43 +226,44 @@
                 <ul class="contact-list">
                     <li>📞 <a href="tel:+380968344149">+38 096 834 41 49</a></li>
                     <li>📧 <a href="mailto:trigmaks@gmail.com">trigmaks@gmail.com</a></li>
-                    <li>📍 Дніпро / Віддалено</li>
+                    <li>📍 Дніпро / Гібрид / Віддалено</li>
                 </ul>
             </div>
 
             <div class="sidebar-section">
-                <h3>Dev / Architecture Skills</h3>
+                <h3>BI & Analytics Skills</h3>
                 <ul class="skills-list">
-                    <li>API Development & Integration</li>
-                    <li>System Architecture Design</li>
-                    <li>Microsoft Power Platform</li>
-                    <li>Microservices Interaction</li>
-                    <li>Database Architecture</li>
-                    <li>Technical Documentation</li>
-                    <li>Workflow Automation</li>
-                    <li>IoT & Hardware Integrations</li>
+                    <li>Power BI (Desktop / Service)</li>
+                    <li>DAX & Power Query (M)</li>
+                    <li>Financial & Operational BI</li>
+                    <li>План-факт аналіз & P&L</li>
+                    <li>Data Marts & DWH modeling</li>
+                    <li>Data Cleaning & ETL logic</li>
+                    <li>SQL (Complex Joins, Aggregations)</li>
+                    <li>Excel (Pivot, Power Pivot)</li>
+                    <li>Збір вимог (Use Cases, User Stories)</li>
+                    <li>Презентація аналітики бізнесу</li>
                 </ul>
             </div>
 
             <div class="sidebar-section">
-                <h3>Tech Stack</h3>
+                <h3>Tech Stack & Data Sources</h3>
                 <ul class="skills-list">
-                    <li>Power Apps / Automate</li>
-                    <li>Azure API / REST / SOAP</li>
-                    <li>JavaScript / TypeScript</li>
-                    <li>Node.js</li>
-                    <li>React / Vue.js</li>
-                    <li>PostgreSQL / MySQL</li>
-                    <li>MongoDB / Redis</li>
+                    <li>PostgreSQL / MS SQL Server</li>
+                    <li>Microsoft 365 Dynamics / Dataverse</li>
+                    <li>Power Platform / Cloud Flows</li>
+                    <li>MySQL / Redis / MongoDB</li>
+                    <li>REST API data ingestion</li>
                     <li>Node-RED / Corezoid</li>
+                    <li>Git / Confluence</li>
                 </ul>
             </div>
             
             <div class="sidebar-section">
                 <h3>Мови</h3>
                 <ul class="skills-list">
-                    <li>Англійська - Intermediate (робота з тех. документацією, API специфікаціями)</li>
-                    <li>Українська - Вільно</li>
+                    <li>Українська — Вільно</li>
+                    <li>Англійська — Intermediate (робота з тех. документацією)</li>
                 </ul>
             </div>
         </aside>
@@ -295,10 +271,10 @@
         <!-- MAIN CONTENT -->
         <main class="main-content">
             <header class="header-section">
-                <div class="profession">ERP/CRM / Integrations Developer</div>
+                <div class="profession">BI / Data Analyst (Finance & Operations)</div>
                 <h1 class="name">Максим Тригуб</h1>
                 <p class="summary">
-                    Розробник з комерційним досвідом понад 3 роки, спеціалізуюся на створенні інтеграційних рішень, проєктуванні архітектури баз даних та автоматизації бізнес-процесів. Маю практичний досвід роботи з екосистемою Microsoft, зокрема налаштування взаємодії через Azure API та використання інструментів Power Platform. Впевнено володію сучасним стеком розробки (Node.js, JavaScript, TypeScript, React, Vue.js), проєктую та реалізую надійні REST/SOAP інтеграції для високонавантажених систем. Орієнтований на розробку масштабованих архітектурних рішень.
+                    Аналітик даних із практичним досвідом понад 3 роки у сфері аналізу даних, розробки BI-звітності та моделювання бізнес-процесів у великому ритейлі та фінтех-секторі. Спеціалізуюся на побудові аналітичних дашбордів у Power BI, проектуванні аналітичних вітрин даних (Data Marts) та оптимізації складних SQL-запитів до реляційних баз (PostgreSQL, MS SQL). Маю успішний досвід підключення як зовнішніх реляційних джерел, так і корпоративних екосистем Microsoft (Power Platform, Dynamics 365, Dataverse). Розумію логіку фінансових і операційних метрик (P&L, план-факт, маржинальність, виконання KPI) та вмію транслювати бізнес-вимоги стейкхолдерів у точні та зручні управлінські рішення.
                 </p>
             </header>
 
@@ -311,27 +287,29 @@
                         <span class="company-name">ПриватБанк</span>
                         <span class="duration">1 рік 4 місяці</span>
                     </div>
-                    <div class="job-title">Software Developer</div>
+                    <div class="job-title">Analytics & Systems Process Developer</div>
                     <ul class="duties-list">
-                        <li>Розробка та підтримка внутрішньої CRM-системи банку, створення нових модулів та клієнтських інтерфейсів (стек: JavaScript, TypeScript, React, Node.js, PHP).</li>
-                        <li>Проєктування архітектури та реалізація інтеграцій між внутрішніми високонавантаженими мікросервісами через REST API.</li>
-                        <li>Оптимізація запитів до баз даних, налаштування та підтримка стабільної роботи серверної частини.</li>
-                        <li>Підготовка та ведення технічної документації для команди в Confluence.</li>
+                        <li>Проєктування та налаштування внутрішніх інструментів візуалізації даних і кастомних аналітичних модулів для моніторингу операційної ефективності співробітників.</li>
+                        <li>Написання та глибока оптимізація аналітичних SQL-запитів до високонавантажених внутрішніх баз даних для формування точних вибірок та звітів.</li>
+                        <li>Створення агрегованих датасетів та логіки обчислення метрик продуктивності команд і проходження бізнес-процесів.</li>
+                        <li>Взаємодія з внутрішніми замовниками: збір вимог, узгодження структури розрахунків показників та формалізація логіки для автоматизації рутинної звітності.</li>
+                        <li>Забезпечення цілісності й валідації даних, що надходять з різних внутрішніх мікросервісів, підготовка аналітичної та технічної документації в Confluence.</li>
                     </ul>
                 </div>
 
                 <!-- EVA -->
                 <div class="experience-item">
                     <div class="exp-header">
-                        <span class="company-name">EVA</span>
+                        <span class="company-name">EVA (РУШ) — Мережа магазинів</span>
                         <span class="duration">1 рік 8 місяців</span>
                     </div>
-                    <div class="job-title">Integrations & Backend Developer</div>
+                    <div class="job-title">BI & Data Analyst / Business Analyst</div>
                     <ul class="duties-list">
-                        <li>Робота з <strong>екосистемою Microsoft</strong>  налаштування та розробка рішень із використанням інструментів <strong>Power Platform</strong>, інтенсивна робота з <strong>Azure API</strong> для інтеграції сервісів</li>
-                        <li>Самостійна розробка кастомної системи управління інфраструктурою магазинів (IoT-інтеграції з апаратними датчиками та пристроями) на базі Node-RED та Vue.js.</li>
-                        <li>Проєктування архітектури баз даних (PostgreSQL, MongoDB, Redis) для зберігання та обробки телеметричних даних.</li>
-                        <li>Розробка Telegram-ботів у Corezoid для управління інфраструктурою та створення кастомних систем моніторингу (дашборди на Creatio, інтеграції в Bitrix24).</li>
+                        <li><strong>Розробка та супровід BI-звітності в Power BI:</strong> налаштування підключень до зовнішніх SQL-баз (MS SQL, PostgreSQL), а також до внутрішніх сутностей екосистеми <strong>Microsoft 365 Dynamics / Dataverse</strong> та Power Platform.</li>
+                        <li>Побудова моделей даних (Star Schema), написання мір на <strong>DAX</strong> та розробка ETL-трансформацій у <strong>Power Query</strong> для розрахунку показників ефективності торговельних точок і складських операцій.</li>
+                        <li>Створення дашбордів для операційного та комерційного аналізу: план-факт показники магазинів, маржинальність категорій, розрахунок відхилень та витрат мережі.</li>
+                        <li>Автоматизація збору регулярної звітності через Power Automate / Cloud Flows, що зменшило ручну обробку даних і пришвидшило доставку звітів менеджменту.</li>
+                        <li>Досвід збору та формалізації вимог бізнесу (User Stories, Use Cases), налаштування прав доступу (Row-Level Security / Security Roles) для розподілу даних між регіональними філіями та директорами магазинів.</li>
                     </ul>
                 </div>
 
@@ -341,28 +319,13 @@
                         <span class="company-name">Monobank</span>
                         <span class="duration">3 роки</span>
                     </div>
-                    <div class="job-title">Technical Support Specialist</div>
+                    <div class="job-title">Support Specialist & Data/Process QA</div>
                     <ul class="duties-list">
-                        <li>Практичний досвід взаємодії зі складними системами маршрутизації та автоматизації процесів (Sender, Corezoid).</li>
-                        <li>Підтримка працездатності внутрішніх фінансових інструментів та траблшутинг технічних інцидентів.</li>
+                        <li>Аналіз операційних метрик підтримки та маршрутизації клієнтських запитів за допомогою внутрішніх систем автоматизації (Sender, Corezoid).</li>
+                        <li>Виявлення патернів збоїв у транзакційних та фінансових процесах, первинна аналітика відхилень і передача рекомендацій розробникам.</li>
+                        <li>Робота з внутрішніми вивантаженнями даних для оцінки індивідуальних KPI та якості комунікацій.</li>
                     </ul>
                 </div>
-
-
-            </section>
-
-            <section>
-                <h2 class="section-title">Проєкти (Freelance / Власні)</h2>
-                <ul class="projects-list">
-                    <li>
-                        <a href="https://garantkrovlia.com.ua/" target="_blank">garantkrovlia.com.ua</a>
-                        <span class="tech-stack">[ HTML5, CSS3, JS, React.js ]</span>
-                    </li>
-                    <li>
-                        <a href="https://krovliaexpert.com/" target="_blank">krovliaexpert.com</a>
-                        <span class="tech-stack">[ HTML5, CSS3, JS, React.js ]</span>
-                    </li>
-                </ul>
             </section>
 
             <section>
@@ -371,7 +334,7 @@
                     <div class="exp-header">
                         <span class="company-name">Національний технічний університет "Дніпровська політехніка"</span>
                     </div>
-                    <div class="job-title" style="color: var(--text-muted);">Магістр з інформаційної безпеки та телекомунікацій</div>
+                    <div class="job-title" style="color: var(--text-muted);">Магістр з комп'ютерних технологій, інформаційної безпеки та телекомунікацій</div>
                 </div>
             </section>
         </main>
