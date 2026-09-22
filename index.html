@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Максим Тригуб - Business / System Analyst (Banking Automation)</title>
+    <title>Максим Тригуб - BizApps Developer / Node-RED & Integration Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -12,12 +12,12 @@
         :root {
             --primary-color: #0f172a;
             --secondary-color: #334155;
-            --accent-color: #0284c7; /* Стриманий банківський синій */
+            --accent-color: #f59e0b; /* Акцентний колір під бренд Node-RED / Uklon */
             --text-main: #1f2937;
             --text-muted: #4b5563;
             --bg-body: #f1f5f9;
             --bg-resume: #ffffff;
-            --sidebar-bg: #0b1329;
+            --sidebar-bg: #111827;
             --sidebar-text: #f8fafc;
         }
 
@@ -31,7 +31,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.55;
             padding: 2rem 1rem;
         }
 
@@ -53,12 +53,12 @@
             padding: 2.5rem 2rem;
             display: flex;
             flex-direction: column;
-            gap: 1.8rem;
+            gap: 1.6rem;
         }
 
         .photo-container {
-            width: 170px;
-            height: 170px;
+            width: 160px;
+            height: 160px;
             margin: 0 auto;
             border-radius: 50%;
             overflow: hidden;
@@ -75,10 +75,10 @@
             font-size: 1.05rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.7rem;
             color: var(--accent-color);
             border-bottom: 1px solid rgba(255,255,255,0.15);
-            padding-bottom: 0.4rem;
+            padding-bottom: 0.35rem;
         }
 
         .contact-list, .skills-list {
@@ -86,8 +86,8 @@
         }
 
         .contact-list li, .skills-list li {
-            margin-bottom: 0.6rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.55rem;
+            font-size: 0.88rem;
         }
 
         .contact-list a {
@@ -108,7 +108,7 @@
 
         .skills-list li {
             background: rgba(255,255,255,0.08);
-            padding: 0.35rem 0.65rem;
+            padding: 0.3rem 0.6rem;
             border-radius: 4px;
             font-size: 0.82rem;
             margin-bottom: 0;
@@ -117,67 +117,67 @@
         /* --- MAIN CONTENT --- */
         .main-content {
             flex: 1;
-            padding: 2.5rem 3rem;
+            padding: 2.5rem 2.8rem;
             background-color: var(--bg-resume);
         }
 
         .header-section {
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
         }
 
         .profession {
-            color: var(--accent-color);
-            font-size: 1.15rem;
+            color: #d97706;
+            font-size: 1.1rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.2px;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.35rem;
         }
 
         .name {
-            font-size: 2.6rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary-color);
             line-height: 1.1;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .summary {
-            font-size: 0.95rem;
+            font-size: 0.93rem;
             color: var(--text-muted);
             text-align: justify;
         }
 
         .section-title {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--primary-color);
             border-bottom: 2px solid var(--bg-body);
-            padding-bottom: 0.4rem;
-            margin-bottom: 1.2rem;
-            margin-top: 1.8rem;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1.1rem;
+            margin-top: 1.6rem;
             font-weight: 600;
         }
 
         .experience-item {
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.6rem;
         }
 
         .exp-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.25rem;
         }
 
         .company-name {
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             font-weight: 700;
             color: var(--primary-color);
         }
 
         .duration {
             font-size: 0.85rem;
-            color: var(--accent-color);
+            color: #d97706;
             font-weight: 600;
         }
 
@@ -185,18 +185,18 @@
             font-size: 0.95rem;
             font-weight: 600;
             color: var(--secondary-color);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.45rem;
         }
 
         .duties-list {
             list-style-type: disc;
-            padding-left: 1.3rem;
+            padding-left: 1.25rem;
             color: var(--text-muted);
-            font-size: 0.92rem;
+            font-size: 0.9rem;
         }
 
         .duties-list li {
-            margin-bottom: 0.45rem;
+            margin-bottom: 0.4rem;
         }
 
         @media (max-width: 768px) {
@@ -205,7 +205,7 @@
             }
             .sidebar {
                 width: 100%;
-                padding: 2rem;
+                padding: 1.8rem;
             }
             .main-content {
                 padding: 1.5rem;
@@ -231,40 +231,51 @@
             </div>
 
             <div class="sidebar-section">
+                <h3>BizApps & Integration</h3>
+                <ul class="skills-list">
+                    <li>Node-RED (Flows, Subflows, Nodes)</li>
+                    <li>Corezoid & Event Orchestration</li>
+                    <li>REST API, GraphQL, Webhooks</li>
+                    <li>OpenAPI / Swagger контракти</li>
+                    <li>Apache Kafka & RabbitMQ (DLQ)</li>
+                    <li>Event-Driven Architecture (EDA)</li>
+                    <li>IoT-інтеграції (MQTT)</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Data & Backend Stack</h3>
+                <ul class="skills-list">
+                    <li>Node.js (Express, Fastify)</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>Redis (Кешування, TTL, Rate-limit)</li>
+                    <li>MongoDB (Агрегації, Схеми)</li>
+                    <li>PostgreSQL / SQL-оптимізація</li>
+                    <li>Docker / Containerization</li>
+                    <li>CI/CD, Git, Postman</li>
+                    <li>Microsoft Azure (API / Bus)</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Frontend & UI</h3>
+                <ul class="skills-list">
+                    <li>React.js (Конструктори форм, UI)</li>
+                    <li>Vue.js (CDN-віджети, моніторинг)</li>
+                    <li>Microfrontends</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
                 <h3>Аналітика & Процеси</h3>
                 <ul class="skills-list">
-                    <li>Бізнес- та системний аналіз</li>
-                    <li>Моделювання BPMN 2.0 / UML</li>
-                    <li>Розробка ТЗ, BRD, User Stories</li>
-                    <li>Проєктування анкет та реєстрів</li>
-                    <li>Автоматизація комплаєнс-контролів</li>
-                    <li>Проведення UAT тестування</li>
-                    <li>Розробка регламентів та інструкцій</li>
+                    <li>Збір вимог та розробка ТЗ</li>
+                    <li>User Stories, Use Cases, BRD</li>
+                    <li>UAT-тестування та регламенти</li>
+                    <li>Observability & Incident Analysis</li>
                 </ul>
             </div>
 
-            <div class="sidebar-section">
-                <h3>Банківська експертиза</h3>
-                <ul class="skills-list">
-                    <li>4+ роки у FinTech / Banking</li>
-                    <li>Розуміння вимог НБУ та фінмоніторингу</li>
-                    <li>Процеси СПФМ та ПВК/ФТ</li>
-                    <li>Ідентифікація та верифікація клієнтів (KYC)</li>
-                    <li>Маршрутизація фінансових операцій</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Технічний стек</h3>
-                <ul class="skills-list">
-                    <li>SQL (PostgreSQL, MS SQL)</li>
-                    <li>REST API / Webhooks / JSON</li>
-                    <li>Corezoid / BPM-системи</li>
-                    <li>Confluence / Jira / Postman</li>
-                    <li>Dataflow & ER-діаграми</li>
-                </ul>
-            </div>
-            
             <div class="sidebar-section">
                 <h3>Мови</h3>
                 <ul class="skills-list">
@@ -277,10 +288,10 @@
         <!-- MAIN CONTENT -->
         <main class="main-content">
             <header class="header-section">
-                <div class="profession">Business / System Analyst (Banking Processes & Automation)</div>
+                <div class="profession">BizApps Developer / Node-RED & Integration Engineer</div>
                 <h1 class="name">Максим Тригуб</h1>
                 <p class="summary">
-                    Аналітик із понад 4 роками досвіду у банківському та фінтех-секторі (ПриватБанк, Monobank), що спеціалізується на автоматизації бізнес-процесів, постановці технічних завдань та впровадженні змін в банківські системи. Глибоко розумію специфіку банківських операцій, функціонування реєстрів, електронних анкет клієнтів та логіки контрольних процедур відповідно до вимог регулятора (НБУ, процеси СПФМ/ПВК/ФТ). Маю практичний інженерний бекграунд: проєктую архітектуру процесів (BPMN), складаю деталізовані ТЗ для IT-команд, проводжу тестування з боку бізнес-замовника (UAT) та створюю базу користувацьких інструкцій.
+                    Інженер бізнес-додатків та архітектор інтеграцій із понад 5 роками комерційного досвіду розробки розподілених, подійно-орієнтованих систем та автоматизації корпоративних процесів. Спеціалізуюся на проєктуванні високонавантажених конвеєрів у Node-RED та Corezoid, побудові асинхронних черг (Kafka, RabbitMQ), інтеграції сервісів через REST API, GraphQL та Webhooks. Маю підтверджений практичний досвід роботи з повним циклом розробки: від збору бізнес-вимог та опису API-контрактів (OpenAPI/Swagger) до реалізації бекенду (Node.js), оптимізації СУБД і кешування (MongoDB, PostgreSQL, Redis), розробки UI-модулів (React, Vue.js) та забезпечення стабільності платформ під час пікових навантажень.
                 </p>
             </header>
 
@@ -293,13 +304,13 @@
                         <span class="company-name">ПриватБанк</span>
                         <span class="duration">1 рік 4 місяці</span>
                     </div>
-                    <div class="job-title">Business / System Analyst (Платформа внутрішньої автоматизації)</div>
+                    <div class="job-title">BizApps Engineer / Senior Full-Stack & Process Integration Developer</div>
                     <ul class="duties-list">
-                        <li><strong>Збір та формалізація вимог:</strong> взаємодія з профільними департаментами банку, виявлення потреб у цифровізації та оптимізації рутинних операцій, перетворення «сирих» бізнес-вимог на структуровані технічні завдання (ТЗ, User Stories, Use Cases).</li>
-                        <li><strong>Проєктування процесів та інтерфейсів:</strong> розробка архітектури екранних форм, цифрових анкет та журналів подій для співробітників банку; налаштування валідацій даних згідно з регламентами.</li>
-                        <li><strong>Супровід розробки та змін:</strong> погодження технічних рішень з командою IT, роз'яснення вимог, контроль повноти та відповідності реалізованого функціоналу погодженому ТЗ.</li>
-                        <li><strong>Організація тестування (UAT):</strong> розробка тестових сценаріїв (тест-кейсів) з боку замовника, проведення приймального тестування нового функціоналу, фіксація та контроль усунення багів.</li>
-                        <li><strong>Пост-релізна підтримка та документація:</strong> моніторинг роботи сценаріїв після виводу в продуктивне середовище, складання та актуалізація покрокових інструкцій для користувачів системи в Confluence.</li>
+                        <li><strong>Розробка та масштабування платформи:</strong> Проєктування модулів внутрішньої банківської Low-Code/BPM платформи (бекенд на Node.js, інтерактивні конструктори форм та інтерфейсів на React).</li>
+                        <li><strong>Node-RED та оркестрація процесів:</strong> Розробка production-потоків (flows), перевикористовуваних підпотоків (subflows) та модулів для міжсистемного обміну даними та автоматизації банківських регламентів із високою щільністю подій.</li>
+                        <li><strong>Асинхронний обмін та черги:</strong> Побудова відмовостійких інтеграцій через Kafka, RabbitMQ, REST API, Webhooks та GraphQL; реалізація retry logic, Dead Letter Queues (DLQ) та механізмів rate-limiting.</li>
+                        <li><strong>Сховища даних та стан:</strong> Оптимізація запитів у PostgreSQL та моделювання документів у MongoDB. Використання Redis для кешування, збереження контекстного стану та розподіленого контролю навантаження (TTL).</li>
+                        <li><strong>Observability та стандарти:</strong> Формалізація контрактів OpenAPI/Swagger, наскрізне структуроване логування, проведення Code Review, рефакторинг та налаштування контейнеризації через Docker і CI/CD.</li>
                     </ul>
                 </div>
 
@@ -309,12 +320,14 @@
                         <span class="company-name">EVA (РУШ) — Мережа магазинів</span>
                         <span class="duration">1 рік 8 місяців</span>
                     </div>
-                    <div class="job-title">Business Analyst / Systems Process Designer</div>
+                    <div class="job-title">Business Analyst & BizApps / Node-RED Integration Engineer</div>
                     <ul class="duties-list">
-                        <li><strong>Моделювання та автоматизація бізнес-процесів:</strong> опис та стандартизація наскрізних процесів у нотації <strong>BPMN 2.0</strong>, розробка схем взаємодії між підрозділами та системами.</li>
-                        <li><strong>Проєктування об'єктної моделі:</strong> розробка структур даних, реєстрів, карток сутностей та аналітичних дашбордів для операційного моніторингу.</li>
-                        <li><strong>Інтеграційний аналіз:</strong> опис вимог до інформаційного обміну між корпоративними системами та базами даних (REST API, SQL, JSON), контроль цілісності даних.</li>
-                        <li>Формування регламентів виконання процесів, проведення демонстрацій та навчання кінцевих користувачів.</li>
+                        <li><strong>Бізнес-аналіз та формування вимог:</strong> Збір та декомпозиція вимог бізнес-підрозділів роздрібної мережі, розробка деталізованих ТЗ (User Stories, Use Cases, діаграми процесів) для IT-команд.</li>
+                        <li><strong>Розробка рішень на Node-RED:</strong> Проєктування архітектури потоків обробки подій, створення кастомних вузлів та конвеєрів збору телеметрії від IoT-обладнання (MQTT, Webhooks, REST API).</li>
+                        <li><strong>Хмарні інтеграції Azure:</strong> Організація захищеного обміну даними з сервісами Microsoft Azure (Azure API Management, Azure Event Hubs / Service Bus).</li>
+                        <li><strong>Кешування та бази даних:</strong> Проєктування сховищ на базі MongoDB та PostgreSQL, використання Redis для оперативного кешування, збереження сесій та лімітування частоти звернень.</li>
+                        <li><strong>UI-компоненти та дашборди:</strong> Розробка модульних інтерфейсів моніторингу на Vue.js та React, що динамічно підвантажувалися через CDN для оперативного відображення метрик.</li>
+                        <li><strong>Приймальне тестування (UAT):</strong> Розробка тест-кейсів, супровід приймання змін замовниками та створення користувацької документації в Confluence.</li>
                     </ul>
                 </div>
 
@@ -324,11 +337,12 @@
                         <span class="company-name">Monobank</span>
                         <span class="duration">3 роки</span>
                     </div>
-                    <div class="job-title">Technical Support & Process Workflow Specialist</div>
+                    <div class="job-title">Corezoid Business Process & Operations Workflow Analyst</div>
                     <ul class="duties-list">
-                        <li><strong>Моніторинг транзакцій та операцій:</strong> супровід клієнтських операцій та верифікаційних процесів, ідентифікація аномальної поведінки та операційних збоїв у системах.</li>
-                        <li><strong>Робота з алгоритмами обробки подій:</strong> аналіз виконання сценаріїв у Corezoid та системі маршрутизації Sender, виявлення «вузьких місць» у взаємодії клієнта та банку.</li>
-                        <li><strong>Траблшутинг та якість даних:</strong> оперативне розслідування інцидентів, фіксація системних помилок та формування задач для технічних команд щодо їх усунення.</li>
+                        <li><strong>Оркестрація процесів у Corezoid:</strong> Проєктування та супровід складних алгоритмічних діаграм для автоматизації внутрішніх операційних ланцюжків і маршрутизації звернень між лініями підтримки.</li>
+                        <li><strong>Інтеграції та обробка даних:</strong> Налаштування обміну через REST API, Webhooks та JSON-схеми між CRM, Corezoid та чат-платформою Sender.</li>
+                        <li><strong>Відмовостійкість та черги:</strong> Налаштування логіки аварійного переключення (fallback) та збереження стану задач в умовах пікового операційного навантаження.</li>
+                        <li><strong>Аналітика вузьких місць:</strong> Дослідження ефективності виконання внутрішніх процесів, зниження затримок (latency) та скорочення часу обробки завдань співробітниками.</li>
                     </ul>
                 </div>
             </section>
@@ -339,7 +353,7 @@
                     <div class="exp-header">
                         <span class="company-name">Національний технічний університет "Дніпровська політехніка"</span>
                     </div>
-                    <div class="job-title" style="color: var(--text-muted);">Магістр з комп'ютерних технологій, інформаційної безпеки та телекомунікацій (Повна вища IT/технічна освіта)</div>
+                    <div class="job-title" style="color: var(--text-muted);">Магістр з комп'ютерних технологій, інформаційної безпеки та телекомунікацій (Повна вища IT освіта)</div>
                 </div>
             </section>
         </main>
